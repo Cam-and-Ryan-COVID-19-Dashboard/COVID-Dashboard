@@ -34,6 +34,37 @@
         <div id='map' style='width:100%; height:500'></div>
     <body>
     <script>
+       
+               
+        
+      var c = document.getElementById("graph");
+      var ctx = c.getContext('2d');
+        
+    c.width = 800;
+    c.height = 200
+        
+        data = [{cname:"Hubei",recover:59433},
+        {cname:"Italy",recover:7025}];
+        
+    y = 0
+        
+    for (i=0;i<data.length;i++) { 
+    ctx.fillStyle = "red"
+    ctx.fillRect(0,y,data[i]['recover']/100 ,50)
+    ctx.fillStyle = "white";
+    ctx.fillText(data[i]['cname'],10, y + 30);
+    }
+        
+    
+    ctx.fillStyle = "red"
+    ctx.fillRect(0,0,59433/100,50)
+    ctx.fillStyle = "white";
+    ctx.fillText("Hubei (Wuhan)",10,30);
+    ctx.fillStyle = "red"
+    ctx.fillRect(0,60,7024/100,50)
+    ctx.fillStyle = "white";
+    ctx.fillText("Italy",10,90);
+        
         // Set up the world map
         map = new L.Map('map');
         var cartocdn = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
