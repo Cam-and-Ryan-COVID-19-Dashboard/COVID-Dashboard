@@ -24,6 +24,36 @@
 
     <iframe width="600" height="371" seamless frameborder="0" scrolling="no" align="right" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_4x2VCwoCEUeFQUxJEXM6zVqpHiR4ee8E0cCcV8OWkKtrniIqDZ4YYcXvjBWFtN3TcUDyuTYuZ7E7/pubchart?oid=1651392241&amp;format=interactive"></iframe>  
     
+<script>
+
+
+ function quiz() {
+  alert("Hello! Welcome to the quiz! Please click OK to continue!")
+  var q1 = prompt("Did the Coronavirus Start in China? Y/N")
+   if(q1 === "Y"){
+    var q2 = prompt(" Does the United States have the most cases currently? Y/N")
+    if(q2 === "Y"){
+     var q3 = prompt("Do all countries have the coronavirus under control? Y/N")
+     if(q3 === "N"){
+      alert("You got 100%!")
+     } else {
+     alert("Sorry you have been eliminated")
+     }
+    } else {
+     alert("Sorry you have been eliminated")
+    }
+   } else {
+    alert("Sorry you have been eliminated")
+   }
+
+
+
+
+
+ }
+ 
+
+
 
     <head>
         <link rel='stylesheet' href='https://unpkg.com/leaflet@1.4.0/dist/leaflet.css'/>
