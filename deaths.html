@@ -27,3 +27,29 @@
    
    <body> <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQq5Z2z_D4-y7s7M3uKjnH2zgzRXjlnsNInU8IY7pj7RVa2HFjPy7-cRbldKZyKyLJzFgmXhbV15f2d/pubchart?oid=723787435&amp;format=interactive"></iframe></body>
 
+   <body>
+       function quiz() {
+  alert("Hello! Welcome to the quiz! Please click OK to continue!")
+  var q1 = prompt("Did the Coronavirus Start in China? Y/N")
+   if(q1 === "Y"){
+    var q2 = prompt(" Does the United States have the most cases currently? Y/N")
+    if(q2 === "Y"){
+     var q3 = prompt("Do all countries have the coronavirus under control? Y/N")
+     if(q3 === "N"){
+      alert("You got 100%!")
+     } else {
+     alert("Sorry you have been eliminated")
+     }
+    } else {
+     alert("Sorry you have been eliminated")
+    }
+   } else {
+    alert("Sorry you have been eliminated")
+   }
+
+
+
+
+
+ }
+   </body>
